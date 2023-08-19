@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import About from "./About";
 import Article from "./Article";
+import ArticleList from "./ArticleList";
 import blogData from "../data/blog";
 
 
@@ -13,6 +14,7 @@ function App() {
       <Header name={blogData.name} />
       <About image={blogData.image} about={blogData.about} />
       <Article posts={blogData.posts} />
+      <ArticleList posts={blogData.posts} />
     </div>
     
   );
